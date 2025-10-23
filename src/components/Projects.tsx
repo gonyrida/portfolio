@@ -6,6 +6,7 @@ import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
+import project5 from "@/assets/project-5.jpg";
 
 const Projects = () => {
   const projects = [
@@ -19,6 +20,15 @@ const Projects = () => {
       type: "Design",
     },
     {
+      title: "Porsche Clone",
+      description:
+        "AI-powered learning assistant utilizing prompt engineering to provide personalized educational support.",
+      image: project5,
+      tags: ["HTML","CSS","JS","Bootstrap", "UX"],
+      year: "2025",
+      type: "Design & Dev",
+    },
+    {
       title: "E-commerce Website",
       description:
         "Fully responsive e-commerce platform built with modern frontend technologies and intuitive shopping experience.",
@@ -28,13 +38,13 @@ const Projects = () => {
       type: "Development",
     },
     {
-      title: "AgTeach Platform",
+      title: "Apple Clone",
       description:
         "Educational platform UI/UX design for agricultural technology learning with focus on accessibility and engagement.",
       image: project3,
       tags: ["UI/UX", "Figma", "User Research"],
-      year: "2023",
-      type: "Design",
+      year: "2025",
+      type: "Design & Dev",
     },
     {
       title: "Tutorial Assistant",
@@ -42,7 +52,7 @@ const Projects = () => {
         "AI-powered learning assistant utilizing prompt engineering to provide personalized educational support.",
       image: project4,
       tags: ["AI", "Prompt Engineering", "UX"],
-      year: "2024",
+      year: "2025",
       type: "Design & Dev",
     },
   ];

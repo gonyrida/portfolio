@@ -42,11 +42,8 @@ const Skills = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              You can check <span className="text-gradient">MY TECHNICAL SKILLS</span>
+              <span className="text-gradient">TECHNICAL SKILLS</span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              through portfolio
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-scale-in">

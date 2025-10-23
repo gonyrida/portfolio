@@ -17,14 +17,14 @@ const Footer = () => {
 
             <div className="flex gap-4">
               <a
-                href="mailto:rida@example.com"
+                href="ridagony@gmail.com"
                 className="p-3 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-smooth shadow-md hover:shadow-glow"
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/in/rida"
+                href="https://www.linkedin.com/in/rida-gony/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-smooth shadow-md hover:shadow-glow"
@@ -33,7 +33,7 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="https://github.com/rida"
+                href="https://github.com/gonyrida"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-smooth shadow-md hover:shadow-glow"
@@ -46,7 +46,7 @@ const Footer = () => {
 
           <div className="mt-8 pt-8 border-t border-border text-center">
             <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
-              © {currentYear} Rida. Designed & Built with
+              © {currentYear} Rida Gony. Designed & Built with
               <Heart className="h-4 w-4 text-primary fill-primary" />
             </p>
           </div>
