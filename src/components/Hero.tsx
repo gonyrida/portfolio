@@ -28,7 +28,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in-up">
           <div className="space-y-4">
             <p className="text-primary font-medium tracking-wide uppercase text-sm">
-              UX/UI Designer & Software Developer
+              UX/UI Designer & Frontend Developer
             </p>
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Hi, I'm <span className="text-gradient">Rida</span>
