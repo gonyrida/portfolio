@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="text-center md:text-left">
               <p className="text-2xl font-bold text-gradient mb-2">Rida</p>
               <p className="text-sm text-muted-foreground">
-                UX/UI Designer & Software Developer
+                UX/UI Designer & Frontend Developer
               </p>
             </div>
 

@@ -34,7 +34,7 @@ const About = () => {
             <div className="space-y-6 animate-slide-in-right">
               <div className="space-y-4">
                 <p className="text-lg text-foreground/80 leading-relaxed">
-                  I'm a UX/UI Designer and Software Developer with a passion for
+                  I'm a UX/UI Designer and Frontend Developer with a passion for
                   crafting digital experiences that blend aesthetics with
                   functionality. Currently in my fourth year of Computer Science at
                   the Royal University of Phnom Penh.
