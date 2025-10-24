@@ -2,6 +2,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
@@ -24,7 +25,7 @@ const Projects = () => {
       description:
         "AI-powered learning assistant utilizing prompt engineering to provide personalized educational support.",
       image: project5,
-      tags: ["HTML","CSS","JS","Bootstrap", "UX"],
+      tags: ["HTML", "CSS", "JS", "Bootstrap", "UX"],
       year: "2025",
       type: "Design & Dev",
     },
@@ -62,14 +63,16 @@ const Projects = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Featured Projects
+            </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               A selection of my recent work in design and development
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((project, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.slice(0, 4).map((project, index) => (
               <Card
                 key={index}
                 className="group overflow-hidden hover:shadow-glow transition-smooth animate-scale-in"
@@ -93,7 +96,9 @@ const Projects = () => {
                 <div className="p-6 space-y-4">
                   <div className="flex items-start justify-between">
                     <div>
-                      <h3 className="text-xl font-bold mb-1">{project.title}</h3>
+                      <h3 className="text-xl font-bold mb-1">
+                        {project.title}
+                      </h3>
                       <p className="text-sm text-muted-foreground">
                         {project.year} • {project.type}
                       </p>
@@ -112,6 +117,12 @@ const Projects = () => {
                 </div>
               </Card>
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button asChild>
+              <Link to="/all-projects">Show More</Link>
+            </Button>
           </div>
         </div>
       </div>
