@@ -64,11 +64,11 @@ const Hero = () => {
               <p className="text-sm text-muted-foreground">Projects</p>
             </div>
             <div className="space-y-1">
-              <p className="text-3xl font-bold text-primary">2+</p>
+              <p className="text-3xl font-bold text-primary">1+</p>
               <p className="text-sm text-muted-foreground">Years Experience</p>
             </div>
             <div className="space-y-1">
-              <p className="text-3xl font-bold text-primary">10+</p>
+              <p className="text-3xl font-bold text-primary">6+</p>
               <p className="text-sm text-muted-foreground">Skills</p>
             </div>
             <div className="space-y-1">

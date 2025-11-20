@@ -1,4 +1,4 @@
-import { Code2, Figma, GitBranch, Eye, Layers, Sliders } from "lucide-react";
+import { Code2, Figma, GitBranch, Users, Layers, Sliders } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const Skills = () => {
@@ -21,7 +21,13 @@ const Skills = () => {
     {
       title: "HTML, CSS",
       icon: Sliders,
-      skills: ["Responsive web", "CSS frameworks", "Bootstrap, MUI", "styled-components", "emotion"],
+      skills: [
+        "Responsive web",
+        "CSS frameworks",
+        "Bootstrap, MUI",
+        "styled-components",
+        "emotion",
+      ],
     },
     {
       title: "Frontend Library",
@@ -30,9 +36,9 @@ const Skills = () => {
       note: "(I can easily use another Frontend Framework based on Javascript)",
     },
     {
-      title: "UX/UI",
-      icon: Eye,
-      skills: ["Figma"],
+      title: "Agile Methodologies",
+      icon: Users,
+      skills: ["Scrum", "Kanban", "Jira"],
     },
   ];
 
