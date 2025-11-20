@@ -16,7 +16,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
@@ -47,74 +47,79 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24">
+    <section id="contact" className="py-24 animate-fade-in delay-500">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Get In Touch
+            </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Let's build something creative together! Feel free to reach out for
-              collaborations or just a friendly chat.
+              Let's build something creative together! Feel free to reach out
+              for collaborations or just a friendly chat.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Info */}
             <div className="space-y-6 animate-slide-in-right">
-              <Card className="p-6 hover:shadow-glow transition-smooth">
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-primary/10 rounded-xl">
-                    <Mail className="h-6 w-6 text-primary" />
+              <a href="mailto:ridagony@gmail.com" className="block">
+                <Card className="p-6 hover:shadow-glow transition-smooth cursor-pointer">
+                  <div className="flex items-center gap-4">
+                    <div className="p-3 bg-primary/10 rounded-xl">
+                      <Mail className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Email</h4>
+                      <span className="text-muted-foreground hover:text-primary transition-smooth">
+                        ridagony@gmail.com
+                      </span>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Email</h4>
-                    <a
-                      href="mailto:ridagony@gmail.com"
-                      className="text-muted-foreground hover:text-primary transition-smooth"
-                    >
-                      ridagony@gmail.com
-                    </a>
-                  </div>
-                </div>
-              </Card>
+                </Card>
+              </a>
 
-              <Card className="p-6 hover:shadow-glow transition-smooth">
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-primary/10 rounded-xl">
-                    <Linkedin className="h-6 w-6 text-primary" />
+              <a
+                href="https://www.linkedin.com/in/rida-gony/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Card className="p-6 hover:shadow-glow transition-smooth cursor-pointer">
+                  <div className="flex items-center gap-4">
+                    <div className="p-3 bg-primary/10 rounded-xl">
+                      <Linkedin className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">LinkedIn</h4>
+                      <span className="text-muted-foreground hover:text-primary transition-smooth">
+                        linkedin.com/in/rida-gony
+                      </span>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">LinkedIn</h4>
-                    <a
-                      href="https://www.linkedin.com/in/rida-gony/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-smooth"
-                    >
-                      linkedin.com/in/rida-gony
-                    </a>
-                  </div>
-                </div>
-              </Card>
+                </Card>
+              </a>
 
-              <Card className="p-6 hover:shadow-glow transition-smooth">
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-primary/10 rounded-xl">
-                    <Github className="h-6 w-6 text-primary" />
+              <a
+                href="https://github.com/gonyrida"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Card className="p-6 hover:shadow-glow transition-smooth cursor-pointer">
+                  <div className="flex items-center gap-4">
+                    <div className="p-3 bg-primary/10 rounded-xl">
+                      <Github className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">GitHub</h4>
+                      <span className="text-muted-foreground hover:text-primary transition-smooth">
+                        github.com/gonyrida
+                      </span>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">GitHub</h4>
-                    <a
-                      href="https://github.com/gonyrida"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-smooth"
-                    >
-                      github.com/gonyrida
-                    </a>
-                  </div>
-                </div>
-              </Card>
+                </Card>
+              </a>
             </div>
 
             {/* Contact Form */}

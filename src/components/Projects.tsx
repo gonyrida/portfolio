@@ -18,7 +18,10 @@ const Projects = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section id="projects" className="py-24 bg-muted/30">
+    <section
+      id="projects"
+      className="py-24 bg-muted/30 animate-fade-in delay-400"
+    >
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">

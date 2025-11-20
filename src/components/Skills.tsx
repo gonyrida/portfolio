@@ -43,7 +43,10 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-24 bg-muted/30">
+    <section
+      id="skills"
+      className="py-24 bg-muted/30 animate-fade-in delay-200"
+    >
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
